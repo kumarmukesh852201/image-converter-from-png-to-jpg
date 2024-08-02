@@ -30,7 +30,7 @@ def upload_file():
                     return "The provided URL does not contain a valid image."
         except IOError:
             abort(413)
-    return render_template('upload.html')
+    return render_template('index.html')
 
 def convert_image(img):
     img = img.convert('RGB')  # Convert to RGB if necessary
